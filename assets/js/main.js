@@ -49,10 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Efecto simple de scroll suave (Smooth Scroll)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            // Si el href cambió a una URL (como el botón de descarga), no interceptar
+            if (!href.startsWith('#')) return;
+            
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const target = document.querySelector(href);
+            if(target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 });
