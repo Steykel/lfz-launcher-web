@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // URL del repositorio de GitHub (Formato: usuario/repositorio)
-    const repoPath = 'Steykel/LFZ-Launcher-Java'; 
+    const repoPath = 'Steykel/LFZ-Launcher-Descargas'; 
     const apiUrl = `https://api.github.com/repos/${repoPath}/releases/latest`;
 
     // Detectar Sistema Operativo
