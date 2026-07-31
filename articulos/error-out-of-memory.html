@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo solucionar el error "Out of Memory" en Minecraft - Tutoriales LFZ Launcher</title>
+    <meta name="description" content="Guía paso a paso para solucionar el famoso error de Out of Memory (Falta de Memoria) en Minecraft ajustando la RAM desde LFZ Launcher.">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#caracteristicas">Características</a></li>
+                <li><a href="../tutoriales.html">Tutoriales</a></li>
+                <li><a href="../index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section para Artículos -->
+    <article class="legal-section" style="max-width: 800px; padding-top: 130px;">
+        
+        <!-- Header del Artículo -->
+        <header style="margin-bottom: 40px; text-align: center;">
+            <div style="color: var(--primary); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Categoría: Solución de Errores</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">Cómo solucionar el error "Out of Memory" (Falta de Memoria)</h1>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; color: var(--text-muted); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-user-circle" style="font-size: 1.2rem;"></i> Steykel
+                </div>
+                <span>&bull;</span>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-calendar-blank" style="font-size: 1.2rem;"></i> 30 de Julio, 2026
+                </div>
+            </div>
+        </header>
+
+        <!-- Imagen principal -->
+        <img src="../assets/images/ram.png" 
+             alt="Error Out of Memory Minecraft" 
+             style="width: 100%; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+
+        <!-- Cuerpo del Artículo -->
+        <div class="legal-content glass-panel" style="padding: 40px; font-size: 1.05rem;">
+            
+            <p>Estás jugando tranquilamente, explorando una nueva cueva o cargando un mundo con cientos de mods, cuando de repente la pantalla se congela y Minecraft se cierra dejando un temido mensaje: <strong>"Out of Memory"</strong>. Este es, sin duda, uno de los errores más comunes y frustrantes de toda la comunidad.</p>
+
+            <!-- Espacio reservado para Anuncio de AdSense -->
+            <div style="background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.1); padding: 20px; text-align: center; margin: 30px 0; color: #555; border-radius: 8px;">
+                [Espacio para Bloque de Anuncios AdSense]
+            </div>
+            
+            <h2 style="color: var(--primary); font-size: 1.8rem; margin-top: 40px; margin-bottom: 20px;">¿Por qué ocurre este error?</h2>
+            <p>Minecraft, especialmente cuando se juega con modpacks (como los de Forge o Fabric), necesita cargar miles de texturas y bloques en la memoria temporal de tu computadora (la Memoria RAM). Por defecto, la mayoría de launchers solo le dan a Minecraft un máximo de <strong>2 Gigabytes (2GB)</strong> de RAM. Si el juego necesita más de esos 2GB para funcionar, colapsa por asfixia.</p>
+            
+            <h3 style="color: var(--text-main); font-size: 1.4rem; margin-top: 30px; margin-bottom: 15px;">Cómo solucionarlo usando LFZ Launcher</h3>
+            <p>Aumentar la memoria RAM en LFZ Launcher es un proceso de un par de clics y no requiere tocar códigos extraños:</p>
+            
+            <ul>
+                <li style="margin-bottom: 10px;"><strong>Paso 1:</strong> Abre LFZ Launcher y dirígete a la pestaña de "Ajustes" o "Configuración".</li>
+                <li style="margin-bottom: 10px;"><strong>Paso 2:</strong> Busca la barra deslizante que dice "Asignación de Memoria (RAM)".</li>
+                <li style="margin-bottom: 10px;"><strong>Paso 3:</strong> Sube la cantidad asignada. Si juegas Vanilla (sin mods), 3GB a 4GB es perfecto. Si juegas modpacks pesados, recomendamos entre 6GB y 8GB.</li>
+                <li style="margin-bottom: 10px;"><strong>Paso 4:</strong> Guarda los cambios y vuelve a abrir el juego.</li>
+            </ul>
+
+            <!-- Espacio reservado para Anuncio de AdSense -->
+            <div style="background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.1); padding: 20px; text-align: center; margin: 30px 0; color: #555; border-radius: 8px;">
+                [Espacio para Bloque de Anuncios AdSense]
+            </div>
+
+            <h2 style="color: var(--primary); font-size: 1.8rem; margin-top: 40px; margin-bottom: 20px;">⚠️ Un Consejo de Oro: ¡No le des toda tu RAM!</h2>
+            <p>Un error clásico que cometen los jugadores es pensar: <em>"Tengo 16GB de RAM en mi PC, así que le daré 14GB a Minecraft para que vuele"</em>. <strong>¡Esto es un grave error!</strong></p>
+            <p>Tu sistema operativo (Windows) y los programas en segundo plano (como Discord, Spotify o Chrome) necesitan memoria para existir. Si le das todo a Minecraft, Windows se asfixiará, tu PC se congelará entera y terminarás forzando un reinicio de tu máquina. Como regla general, deja siempre <strong>al menos 4GB de RAM libres</strong> para tu computadora.</p>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="../index.html#descargar" class="btn-primary">Descargar LFZ Launcher</a>
+            </div>
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+            </div>
+            <p>&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="../privacidad.html">Privacidad</a> | 
+                <a href="../terminos.html">Términos</a> | 
+                <a href="../contacto.html">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/Steykel/LFZ-Launcher-Descargas" target="_blank" title="Repositorio Oficial de Descargas"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="javascript:void(0);" title="Servidor de Discord (Próximamente)"><i class="ph-fill ph-discord-logo"></i></a>
+            </div>
+        </div>
+        <p class="footer-disclaimer">No estamos afiliados con Mojang AB ni Microsoft.</p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
