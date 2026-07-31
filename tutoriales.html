@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriales - LFZ Launcher</title>
+    <meta name="description" content="Aprende a optimizar Minecraft, instalar mods y descubrir los mejores shaders con los tutoriales oficiales de LFZ Launcher.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#caracteristicas">Características</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a href="index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Tutoriales -->
+    <header class="blog-header" style="padding-top: 150px; text-align: center; max-width: 800px; margin: 0 auto;">
+        <h1 class="hero-title">Centro de <span class="text-gradient">Tutoriales</span></h1>
+        <p class="hero-subtitle">Mejora tu experiencia en Minecraft, aprende a usar Modrinth, optimiza tu PC y mantente al día con nuestras guías completas.</p>
+    </header>
+
+    <!-- Grid de Artículos -->
+    <section class="blog-section" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px 100px;">
+        <div class="feature-grid">
+            
+            <!-- Tarjeta 1 -->
+            <a href="articulos/como-optimizar-minecraft-con-fabric.html" class="feature-card glass-panel" style="text-decoration: none; color: inherit; display: block; text-align: left; padding: 25px;">
+                <div class="blog-image" style="background: url('https://images.unsplash.com/photo-1607988795691-3e0147c43c3f?q=80&w=2070&auto=format&fit=crop') center/cover; height: 180px; border-radius: 8px; margin-bottom: 20px;"></div>
+                <h3 style="color: var(--primary); font-size: 1.4rem;">Cómo optimizar Minecraft al máximo usando Fabric y Sodium en 2026</h3>
+                <p style="margin-top: 10px; font-size: 0.95rem;">Descubre cómo pasar de 40 FPS a más de 300 FPS instalando el combo definitivo de optimización para Minecraft moderno.</p>
+                <div style="margin-top: 15px; font-size: 0.85rem; color: #888;">Por Steykel &bull; 30 de Julio, 2026</div>
+            </a>
+
+            <!-- Tarjeta 2 -->
+            <a href="articulos/java-21-vs-java-25-rendimiento.html" class="feature-card glass-panel" style="text-decoration: none; color: inherit; display: block; text-align: left; padding: 25px;">
+                <div class="blog-image" style="background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop') center/cover; height: 180px; border-radius: 8px; margin-bottom: 20px;"></div>
+                <h3 style="color: var(--primary); font-size: 1.4rem;">Java 21 vs Java 25: ¿Cuál usar para mejorar el rendimiento de Minecraft?</h3>
+                <p style="margin-top: 10px; font-size: 0.95rem;">Una comparativa técnica sobre qué versión del JDK debes usar según si juegas en la 1.20 o en las snapshots más recientes.</p>
+                <div style="margin-top: 15px; font-size: 0.85rem; color: #888;">Por Steykel &bull; 28 de Julio, 2026</div>
+            </a>
+
+            <!-- Tarjeta 3 -->
+            <a href="articulos/mejores-modpacks-modrinth-2026.html" class="feature-card glass-panel" style="text-decoration: none; color: inherit; display: block; text-align: left; padding: 25px;">
+                <div class="blog-image" style="background: url('https://images.unsplash.com/photo-1588693710776-92c9b4e18349?q=80&w=2072&auto=format&fit=crop') center/cover; height: 180px; border-radius: 8px; margin-bottom: 20px;"></div>
+                <h3 style="color: var(--primary); font-size: 1.4rem;">Top 5 Mejores Modpacks en Modrinth que debes probar</h3>
+                <p style="margin-top: 10px; font-size: 0.95rem;">Una selección de modpacks imprescindibles para aventuras, rol y automatización de fábricas, fáciles de instalar desde LFZ Launcher.</p>
+                <div style="margin-top: 15px; font-size: 0.85rem; color: #888;">Por Steykel &bull; 25 de Julio, 2026</div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+            </div>
+            <p>&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="privacidad.html">Privacidad</a> | 
+                <a href="terminos.html">Términos</a> | 
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/Steykel/LFZ-Launcher-Descargas" target="_blank" title="Repositorio Oficial de Descargas"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="javascript:void(0);" title="Servidor de Discord (Próximamente)"><i class="ph-fill ph-discord-logo"></i></a>
+            </div>
+        </div>
+        <p class="footer-disclaimer">No estamos afiliados con Mojang AB ni Microsoft.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

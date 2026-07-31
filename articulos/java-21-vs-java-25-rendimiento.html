@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 21 vs Java 25: ¿Cuál usar para mejorar el rendimiento de Minecraft? - Tutoriales LFZ Launcher</title>
+    <meta name="description" content="Descubre las diferencias técnicas entre Java 21 y Java 25 y cómo elegir la versión de Java correcta puede mejorar tus FPS en Minecraft.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#caracteristicas">Características</a></li>
+                <li><a href="../tutoriales.html">Tutoriales</a></li>
+                <li><a href="../index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section para Artículos -->
+    <article class="legal-section" style="max-width: 800px; padding-top: 130px;">
+        
+        <header style="margin-bottom: 40px; text-align: center;">
+            <div style="color: var(--primary); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Categoría: Guías Técnicas</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">Java 21 vs Java 25: ¿Cuál usar para Minecraft?</h1>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; color: var(--text-muted); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-user-circle" style="font-size: 1.2rem;"></i> Steykel
+                </div>
+                <span>&bull;</span>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-calendar-blank" style="font-size: 1.2rem;"></i> 28 de Julio, 2026
+                </div>
+            </div>
+        </header>
+
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop" 
+             alt="Código Java y Minecraft" 
+             style="width: 100%; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+
+        <div class="legal-content glass-panel" style="padding: 40px; font-size: 1.05rem;">
+            
+            <p>Minecraft está escrito en el lenguaje de programación Java. Para que el juego funcione, tu computadora necesita tener instalado el entorno de ejecución de Java (JRE/JDK). Sin embargo, con las recientes actualizaciones del juego, la versión de Java que elijas tiene un impacto inmenso en el rendimiento, el consumo de RAM y la compatibilidad de los mods.</p>
+
+            <h2 style="color: var(--primary); font-size: 1.8rem; margin-top: 40px; margin-bottom: 20px;">El estándar actual: Java 21 LTS</h2>
+            <p>A partir de la versión 1.20.5 de Minecraft, Mojang tomó la decisión de actualizar los requerimientos del motor del juego a <strong>Java 21</strong>. Esta fue una actualización técnica masiva que dejó atrás al antiguo Java 17.</p>
+            <ul>
+                <li style="margin-bottom: 10px;"><strong>Ventajas de Java 21:</strong> Es una versión LTS (Long Term Support), lo que significa que es la versión más estable y recomendada para jugar cualquier versión desde la 1.20.5 en adelante. El recolector de basura (Garbage Collector) de Java 21, especialmente el ZGC, maneja la memoria RAM de forma magistral reduciendo los pequeños "tirones" al cargar el mundo.</li>
+            </ul>
+            
+            <h2 style="color: var(--primary); font-size: 1.8rem; margin-top: 40px; margin-bottom: 20px;">La vanguardia: Java 25 para Snapshots</h2>
+            <p>Si eres un jugador aventurero que disfruta probando las últimas "Snapshots" experimentales de Minecraft, es posible que necesites dar el salto a <strong>Java 25</strong>.</p>
+            <ul>
+                <li style="margin-bottom: 10px;"><strong>Ventajas de Java 25:</strong> Contiene las últimas mejoras de rendimiento a nivel de código máquina y CPU. Sin embargo, no es una versión LTS. Usar Java 25 puede hacer que tu juego vuele en FPS, pero algunos mods antiguos podrían no funcionar correctamente debido a cambios internos en la máquina virtual.</li>
+            </ul>
+
+            <h3 style="color: var(--text-main); font-size: 1.4rem; margin-top: 30px; margin-bottom: 15px;">La ventaja de usar LFZ Launcher</h3>
+            <p>El mayor problema para un jugador común es tener que estar desinstalando e instalando diferentes versiones de Java manualmente, configurando las rutas de entorno en Windows. <strong>LFZ Launcher soluciona esto de raíz.</strong></p>
+            <p>El launcher detecta automáticamente qué versión de Minecraft vas a jugar, descarga la versión exacta de Java requerida (sea 21 o 25) y la aísla en una carpeta propia, sin afectar tu computadora ni requerir instalaciones molestas.</p>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="../index.html#descargar" class="btn-primary">Prueba LFZ Launcher ahora</a>
+            </div>
+
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+            </div>
+            <p>&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="../privacidad.html">Privacidad</a> | 
+                <a href="../terminos.html">Términos</a> | 
+                <a href="../contacto.html">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/Steykel/LFZ-Launcher-Descargas" target="_blank" title="Repositorio Oficial de Descargas"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="javascript:void(0);" title="Servidor de Discord (Próximamente)"><i class="ph-fill ph-discord-logo"></i></a>
+            </div>
+        </div>
+        <p class="footer-disclaimer">No estamos afiliados con Mojang AB ni Microsoft.</p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
