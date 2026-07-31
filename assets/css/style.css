@@ -426,6 +426,23 @@ footer {
     text-decoration: underline;
 }
 
+.legal-content a.btn-primary {
+    color: white;
+    text-decoration: none;
+}
+
+.legal-content a.btn-primary:hover {
+    text-decoration: none;
+}
+
+.blog-image {
+    height: 180px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
 /* Footer Links */
 .footer-links {
     color: var(--text-muted);
