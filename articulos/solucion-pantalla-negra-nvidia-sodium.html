@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Negra en Minecraft con tarjetas NVIDIA y Sodium (Solución Definitiva) - Tutoriales LFZ Launcher</title>
+    <meta name="description" content="Descubre este tutorial y más en la web oficial de LFZ Launcher.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#caracteristicas">Características</a></li>
+                <li><a href="../tutoriales.html">Tutoriales</a></li>
+                <li><a href="../index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section para Artículos -->
+    <article class="legal-section" style="max-width: 800px; padding-top: 130px;">
+        
+        <header style="margin-bottom: 40px; text-align: center;">
+            <div style="color: var(--primary); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Categoría: Soporte Técnico</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">Pantalla Negra en Minecraft con tarjetas NVIDIA y Sodium (Solución Definitiva)</h1>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; color: var(--text-muted); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-user-circle" style="font-size: 1.2rem;"></i> LFZ Team
+                </div>
+                <span>&bull;</span>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-calendar-blank" style="font-size: 1.2rem;"></i> 10 de Agosto, 2026
+                </div>
+            </div>
+        </header>
+
+        <img src="../assets/images/nvidia-sodium.png" 
+             alt="Pantalla Negra en Minecraft con tarjetas NVIDIA y Sodium (Solución Definitiva)" 
+             style="width: 100%; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); aspect-ratio: 16/9; background: #222;">
+
+        <div class="legal-content glass-panel" style="padding: 40px; font-size: 1.05rem;">
+            
+            <h2>El terror de los portátiles Gamer</h2>
+            <p>Tienes una PC o laptop potente (quizás con una RTX 4050 o similar). Instalas Fabric y el famoso mod de optimización <strong>Sodium</strong>, esperando tener miles de FPS. Sin embargo, al iniciar el juego, solo ves una <strong>pantalla negra</strong> y el registro muestra errores como <em>GL_INVALID_OPERATION</em>.</p>
+            
+            <h3>¿Qué está fallando?</h3>
+            <p>El problema no es tu tarjeta de video. Existe un bug conocido entre los drivers recientes de NVIDIA y ciertos "workarounds" (parches) internos del mod Sodium que intentan solucionar fallos antiguos, los cuales terminan rompiendo el renderizado en hardware moderno.</p>
+            
+            <h3>Cómo arreglarlo tú mismo</h3>
+            <p>Tienes que ir a tu carpeta `.minecraft/config`, crear manualmente un archivo llamado `sodium-mixin.properties`, y escribirle adentro el texto `mixin.workarounds=false` para decirle al mod que no use sus parches problemáticos.</p>
+            
+            <h3>La magia de LFZ Launcher</h3>
+            <p>Si usas LFZ Launcher, <strong>no tienes que hacer nada de esto</strong>. Nuestro equipo implementó un parche de seguridad en el código del launcher: cada vez que le das al botón de Jugar, el LFZ Launcher detecta si tienes una tarjeta NVIDIA y si estás usando Sodium. Si es así, él mismo crea y repara ese archivo `.properties` por ti antes de que el juego abra en fracciones de segundo. Resultado: ¡Juego abriendo perfecto a la primera!</p>
+        
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../tutoriales.html" class="btn btn-secondary">
+                <i class="ph-bold ph-arrow-left"></i> Volver a Tutoriales
+            </a>
+        </div>
+    </article>
+
+    <!-- Footer Simple -->
+    <footer style="text-align: center; padding: 40px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    </script>
+</body>
+</html>
