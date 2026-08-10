@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo grabar cinemáticas increíbles en Minecraft con Replay Mod - Tutoriales LFZ Launcher</title>
+    <meta name="description" content="Descubre este tutorial y más en la web oficial de LFZ Launcher.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#caracteristicas">Características</a></li>
+                <li><a href="../tutoriales.html">Tutoriales</a></li>
+                <li><a href="../index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section para Artículos -->
+    <article class="legal-section" style="max-width: 800px; padding-top: 130px;">
+        
+        <header style="margin-bottom: 40px; text-align: center;">
+            <div style="color: var(--primary); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Categoría: Utilidades</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">Cómo grabar cinemáticas increíbles en Minecraft con Replay Mod</h1>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; color: var(--text-muted); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-user-circle" style="font-size: 1.2rem;"></i> LFZ Team
+                </div>
+                <span>&bull;</span>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-calendar-blank" style="font-size: 1.2rem;"></i> 9 de Agosto, 2026
+                </div>
+            </div>
+        </header>
+
+        <img src="../assets/images/replay-mod.png" 
+             alt="Cómo grabar cinemáticas increíbles en Minecraft con Replay Mod" 
+             style="width: 100%; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); aspect-ratio: 16/9; background: #222;">
+
+        <div class="legal-content glass-panel" style="padding: 40px; font-size: 1.05rem;">
+            
+            <h2>Crea videos como los profesionales</h2>
+            <p>Si alguna vez has visto un video de YouTube o TikTok con movimientos de cámara suaves y épicos en Minecraft, lo más probable es que hayan usado <strong>Replay Mod</strong>.</p>
+            
+            <h3>¿Qué hace Replay Mod?</h3>
+            <p>A diferencia de programas como OBS, Replay Mod no graba tu pantalla. Graba <em>todo el servidor</em> (o tu mundo de un jugador) en un archivo muy pequeño. Luego, puedes "volver a entrar" a esa grabación, detener el tiempo, volar alrededor de la escena invisiblemente y colocar puntos clave (Keyframes) de cámara.</p>
+            
+            <h3>Pasos para renderizar un video</h3>
+            <ol>
+                <li>Comienza a grabar desde el menú antes de construir o pelear.</li>
+                <li>Sal del mundo, ve al "Replay Viewer" y abre tu grabación.</li>
+                <li>Usa la línea de tiempo superior para poner keyframes de posición y tiempo.</li>
+                <li>Dale al botón de <em>Render</em> (necesitarás instalar FFmpeg en tu PC).</li>
+            </ol>
+            
+            <p>Este mod requiere <strong>Fabric</strong>, así que asegúrate de crear una instancia de Fabric en tu LFZ Launcher antes de instalarlo.</p>
+        
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../tutoriales.html" class="btn btn-secondary">
+                <i class="ph-bold ph-arrow-left"></i> Volver a Tutoriales
+            </a>
+        </div>
+    </article>
+
+    <!-- Footer Simple -->
+    <footer style="text-align: center; padding: 40px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        // Basic fallback
+    </script>
+</body>
+</html>

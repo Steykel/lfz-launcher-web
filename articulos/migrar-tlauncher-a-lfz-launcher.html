@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo migrar todos tus mundos y mods desde TLauncher al LFZ Launcher - Tutoriales LFZ Launcher</title>
+    <meta name="description" content="Descubre este tutorial y más en la web oficial de LFZ Launcher.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#caracteristicas">Características</a></li>
+                <li><a href="../tutoriales.html">Tutoriales</a></li>
+                <li><a href="../index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section para Artículos -->
+    <article class="legal-section" style="max-width: 800px; padding-top: 130px;">
+        
+        <header style="margin-bottom: 40px; text-align: center;">
+            <div style="color: var(--primary); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Categoría: Guías del Launcher</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">Cómo migrar todos tus mundos y mods desde TLauncher al LFZ Launcher</h1>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; color: var(--text-muted); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-user-circle" style="font-size: 1.2rem;"></i> LFZ Team
+                </div>
+                <span>&bull;</span>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-calendar-blank" style="font-size: 1.2rem;"></i> 9 de Agosto, 2026
+                </div>
+            </div>
+        </header>
+
+        <img src="../assets/images/migration.png" 
+             alt="Cómo migrar todos tus mundos y mods desde TLauncher al LFZ Launcher" 
+             style="width: 100%; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); aspect-ratio: 16/9; background: #222;">
+
+        <div class="legal-content glass-panel" style="padding: 40px; font-size: 1.05rem;">
+            
+            <h2>Pásate a la nueva generación sin perder nada</h2>
+            <p>¿Has estado usando TLauncher u otros programas legacy y finalmente has decidido pasarte al moderno LFZ Launcher? ¡No te preocupes! No perderás ninguno de tus mundos, texturas o configuraciones.</p>
+            
+            <h3>¿Dónde están tus cosas viejas?</h3>
+            <p>Normalmente, tus mundos antiguos están en la ruta <code>%appdata%/.minecraft/saves</code>. Presiona <code>Windows + R</code>, escribe <code>%appdata%</code> y busca la carpeta <code>.minecraft</code>.</p>
+            
+            <h3>Paso a paso para migrar:</h3>
+            <ol>
+                <li>Abre LFZ Launcher y crea una "Nueva Instancia" (asegúrate de ponerle la misma versión de Minecraft que estabas usando antes).</li>
+                <li>Haz clic en "Guardar". LFZ creará una carpeta limpia, aislada del resto.</li>
+                <li>Ve a la pestaña "Ajustes" de esa instancia y haz clic en <strong>Abrir Carpeta</strong>.</li>
+                <li>Se abrirá la carpeta de la instancia. Ahora solo debes copiar tu vieja carpeta <code>saves</code> (tus mundos) y <code>resourcepacks</code> desde el viejo `.minecraft` y pegarla ahí.</li>
+            </ol>
+            
+            <p>LFZ Launcher mantiene todo separado en "Instancias". Esto significa que tus mods de la 1.20 nunca se mezclarán con los de tu mundo técnico en la 1.12. ¡Es la forma más segura y ordenada de jugar!</p>
+        
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../tutoriales.html" class="btn btn-secondary">
+                <i class="ph-bold ph-arrow-left"></i> Volver a Tutoriales
+            </a>
+        </div>
+    </article>
+
+    <!-- Footer Simple -->
+    <footer style="text-align: center; padding: 40px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        // Basic fallback
+    </script>
+</body>
+</html>

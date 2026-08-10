@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo conectar portales del Nether para viajar miles de bloques en segundos - Tutoriales LFZ Launcher</title>
+    <meta name="description" content="Descubre este tutorial y más en la web oficial de LFZ Launcher.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#caracteristicas">Características</a></li>
+                <li><a href="../tutoriales.html">Tutoriales</a></li>
+                <li><a href="../index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section para Artículos -->
+    <article class="legal-section" style="max-width: 800px; padding-top: 130px;">
+        
+        <header style="margin-bottom: 40px; text-align: center;">
+            <div style="color: var(--primary); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Categoría: Minecraft Técnico</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">Cómo conectar portales del Nether para viajar miles de bloques en segundos</h1>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; color: var(--text-muted); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-user-circle" style="font-size: 1.2rem;"></i> LFZ Team
+                </div>
+                <span>&bull;</span>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-calendar-blank" style="font-size: 1.2rem;"></i> 9 de Agosto, 2026
+                </div>
+            </div>
+        </header>
+
+        <img src="../assets/images/nether-portals.png" 
+             alt="Cómo conectar portales del Nether para viajar miles de bloques en segundos" 
+             style="width: 100%; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); aspect-ratio: 16/9; background: #222;">
+
+        <div class="legal-content glass-panel" style="padding: 40px; font-size: 1.05rem;">
+            
+            <h2>El viaje rápido de Minecraft</h2>
+            <p>El Nether no es solo un lugar lleno de lava y peligro, es la autopista natural de Minecraft. Gracias a la matemática del juego, <strong>1 bloque recorrido en el Nether equivale a 8 bloques en el Overworld</strong>.</p>
+            
+            <h3>La regla del 1 a 8</h3>
+            <p>Si construyes tu casa en las coordenadas `X: 800, Z: 800` en el Overworld y quieres llegar rápido a una aldea en `X: 8000, Z: 8000`, caminar 7000 bloques te tomaría horas. ¡Pero en el Nether, esa distancia es solo de 875 bloques!</p>
+            
+            <h3>Cómo enlazarlos perfectamente</h3>
+            <ol>
+                <li>Anota las coordenadas X y Z de tu portal en el Overworld. (Ejemplo: X=80, Z=-160). Ignora la Y (altura).</li>
+                <li>Divide esas coordenadas entre 8. (Resultado: X=10, Z=-20).</li>
+                <li>Entra al Nether. Dirígete EXACTAMENTE a las coordenadas X=10, Z=-20 y construye un portal ahí.</li>
+                <li>Enciéndelo y entra. ¡Estarás vinculado perfectamente a tu casa!</li>
+            </ol>
+            
+            <p>Construir túneles de hielo en el techo del Nether con botes te permitirá viajar decenas de miles de bloques en menos de un minuto.</p>
+        
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../tutoriales.html" class="btn btn-secondary">
+                <i class="ph-bold ph-arrow-left"></i> Volver a Tutoriales
+            </a>
+        </div>
+    </article>
+
+    <!-- Footer Simple -->
+    <footer style="text-align: center; padding: 40px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        // Basic fallback
+    </script>
+</body>
+</html>

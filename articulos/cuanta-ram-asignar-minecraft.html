@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La cantidad perfecta de RAM para Minecraft (No cometas este error) - Tutoriales LFZ Launcher</title>
+    <meta name="description" content="Descubre este tutorial y más en la web oficial de LFZ Launcher.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#caracteristicas">Características</a></li>
+                <li><a href="../tutoriales.html">Tutoriales</a></li>
+                <li><a href="../index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section para Artículos -->
+    <article class="legal-section" style="max-width: 800px; padding-top: 130px;">
+        
+        <header style="margin-bottom: 40px; text-align: center;">
+            <div style="color: var(--primary); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Categoría: Optimización</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">La cantidad perfecta de RAM para Minecraft (No cometas este error)</h1>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; color: var(--text-muted); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-user-circle" style="font-size: 1.2rem;"></i> LFZ Team
+                </div>
+                <span>&bull;</span>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-calendar-blank" style="font-size: 1.2rem;"></i> 9 de Agosto, 2026
+                </div>
+            </div>
+        </header>
+
+        <img src="../assets/images/ram-guide.png" 
+             alt="La cantidad perfecta de RAM para Minecraft (No cometas este error)" 
+             style="width: 100%; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); aspect-ratio: 16/9; background: #222;">
+
+        <div class="legal-content glass-panel" style="padding: 40px; font-size: 1.05rem;">
+            
+            <h2>Más RAM no siempre significa más FPS</h2>
+            <p>Uno de los mitos más grandes en Minecraft es creer que si le asignas 16 GB de RAM, el juego irá a la velocidad de la luz. De hecho, ¡hacer esto puede causar que el juego se congele cada pocos segundos!</p>
+            
+            <h3>El problema del "Garbage Collector"</h3>
+            <p>Java (el lenguaje en el que está escrito Minecraft) utiliza algo llamado <em>Recolector de Basura</em>. Si le das demasiada RAM, Java tardará mucho en llenarla, pero cuando finalmente intente limpiarla, causará un "tirón" (lag spike) masivo en tu juego.</p>
+            
+            <h3>La regla de oro para la RAM</h3>
+            <ul>
+                <li><strong>Minecraft Vanilla (Sin mods):</strong> 2 GB a 3 GB son más que suficientes.</li>
+                <li><strong>Con Shaders y algunos mods:</strong> 4 GB a 6 GB.</li>
+                <li><strong>Modpacks Gigantes (200+ mods):</strong> 6 GB a 8 GB máximo.</li>
+            </ul>
+            
+            <h3>Cómo ajustarlo en LFZ Launcher</h3>
+            <p>Ve a "Editar Instancia" y verás un control deslizante de Memoria RAM. El launcher nunca te dejará asignar el 100% de la RAM de tu PC, protegiendo así a Windows para que tu computadora no se bloquee.</p>
+        
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../tutoriales.html" class="btn btn-secondary">
+                <i class="ph-bold ph-arrow-left"></i> Volver a Tutoriales
+            </a>
+        </div>
+    </article>
+
+    <!-- Footer Simple -->
+    <footer style="text-align: center; padding: 40px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        // Basic fallback
+    </script>
+</body>
+</html>

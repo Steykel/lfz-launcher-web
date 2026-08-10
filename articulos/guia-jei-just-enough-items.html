@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEI (Just Enough Items): Nunca más busques crafteos en Google - Tutoriales LFZ Launcher</title>
+    <meta name="description" content="Descubre este tutorial y más en la web oficial de LFZ Launcher.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../index.html" style="color: inherit; text-decoration: none;">
+                    <i class="ph-fill ph-cube"></i> LFZ <span>Launcher</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#caracteristicas">Características</a></li>
+                <li><a href="../tutoriales.html">Tutoriales</a></li>
+                <li><a href="../index.html#descargar" class="btn-nav">Descargar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section para Artículos -->
+    <article class="legal-section" style="max-width: 800px; padding-top: 130px;">
+        
+        <header style="margin-bottom: 40px; text-align: center;">
+            <div style="color: var(--primary); font-weight: 600; margin-bottom: 10px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Categoría: Utilidades</div>
+            <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">JEI (Just Enough Items): Nunca más busques crafteos en Google</h1>
+            
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; color: var(--text-muted); font-size: 0.9rem;">
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-user-circle" style="font-size: 1.2rem;"></i> LFZ Team
+                </div>
+                <span>&bull;</span>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                    <i class="ph-fill ph-calendar-blank" style="font-size: 1.2rem;"></i> 9 de Agosto, 2026
+                </div>
+            </div>
+        </header>
+
+        <img src="../assets/images/jei-mod.png" 
+             alt="JEI (Just Enough Items): Nunca más busques crafteos en Google" 
+             style="width: 100%; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); aspect-ratio: 16/9; background: #222;">
+
+        <div class="legal-content glass-panel" style="padding: 40px; font-size: 1.05rem;">
+            
+            <h2>El mod más descargado de la historia</h2>
+            <p>¿Cansado de minimizar el juego para buscar en la wiki cómo se craftea un observador o un faro? <strong>Just Enough Items (JEI)</strong> es la solución a todos tus problemas.</p>
+            
+            <h3>¿Cómo funciona JEI?</h3>
+            <p>Una vez instalado, al abrir tu inventario verás una barra de búsqueda y una lista infinita de todos los bloques y objetos del juego (incluyendo los de tus mods) en el lado derecho de la pantalla.</p>
+            
+            <h3>Atajos de teclado esenciales</h3>
+            <ul>
+                <li><strong>Tecla R (Recipe):</strong> Pon el cursor sobre cualquier objeto y presiona R. Verás exactamente cómo se craftea.</li>
+                <li><strong>Tecla U (Uses):</strong> Pon el cursor sobre un material (como hierro) y presiona U. Verás todos los crafteos en los que se utiliza ese material.</li>
+                <li><strong>Doble clic en la barra de búsqueda:</strong> Te permite filtrar por colores o mods (escribiendo @nombre_del_mod).</li>
+            </ul>
+            
+            <p>Instalar JEI es pan comido con LFZ Launcher. Solo ve a la pestaña "Bajar Mods", busca "JEI" y dale a instalar.</p>
+        
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="../tutoriales.html" class="btn btn-secondary">
+                <i class="ph-bold ph-arrow-left"></i> Volver a Tutoriales
+            </a>
+        </div>
+    </article>
+
+    <!-- Footer Simple -->
+    <footer style="text-align: center; padding: 40px; margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 LFZ Launcher. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('particles-bg');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        // Basic fallback
+    </script>
+</body>
+</html>
