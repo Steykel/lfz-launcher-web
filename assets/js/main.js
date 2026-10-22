@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Error obteniendo release de GitHub:', error);
-            versionLabel.textContent = 'v1.3.6 (Manual)';
+            versionLabel.textContent = 'v1.3.22 (Manual)';
         });
 
     // Efecto simple de scroll suave (Smooth Scroll)
